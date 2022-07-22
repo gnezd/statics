@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
+table{
+    border: 1px solid;
+    border-spacing: 0;
+}
+
+tr {
+    text-align: center;
+}
+tr.unicode > td {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-left: 1px solid;
+}
+
+tr.letter > td {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-left: 1px solid;
+}
