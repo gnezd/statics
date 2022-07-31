@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    font-size: x-large;
 }
 
 table{
@@ -13,13 +14,13 @@ tr {
 tr.unicode > td {
     border-top: 1px solid;
     border-left: 1px solid;
-    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 tr.letter > td {
     border-bottom: 1px solid;
     border-left: 1px solid;
-    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 #x0y0, #x1y10, #x1y11, #x1y12, #x1y13, #x1y14, #x1y15, #x2y0, #x3y10, #x3y11, #x3y12, #x3y13, #x3y14, #x3y15 {
