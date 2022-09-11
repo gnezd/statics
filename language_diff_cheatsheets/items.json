@@ -1,0 +1,13 @@
+[{
+    "id" : 1,
+    "Purpose" : "Get type of object",
+    "lang": "ruby",
+    "code": ["object.class", "object.is_a?"]
+},
+
+{
+    "id" : 1,
+    "Purpose" : "Get type of object",
+    "lang": "python",
+    "code": ["type(object)"]
+}]
