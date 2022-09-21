@@ -21,14 +21,27 @@ HTMLTAIL
 html_out.puts html_head
 html_out.puts "<table>"
 
+# Greek
 start_row = 0x390
 (0..3).each do |row_num|
   row = start_row + 16* row_num
-  line_unicode = "<tr class=\"unicode\" id=\"row#{row_num}-unicode\">" + ((0..15).map {|i| "<td id=\"x#{row_num}y#{i}\"> %04x </td>" % (i + row)}).join("\n") + "</tr>"
-  line_letter = "<tr class=\"letter\" id=\"row#{row_num}-letter\">" + ((0..15).map {|i| "<td id=\"x#{row_num}y#{i}\"> %c </td>" % (i + row)}).join("\n") + "</tr>"
+  line_unicode = "<tr class=\"unicode greek\" id=\"row#{row_num}-unicode\">" + ((0..15).map {|i| "<td id=\"x#{row_num}y#{i}\"> %04x </td>" % (i + row)}).join("\n") + "</tr>"
+  line_letter = "<tr class=\"letter greek\" id=\"row#{row_num}-letter\">" + ((0..15).map {|i| "<td id=\"x#{row_num}y#{i}\"> %c </td>" % (i + row)}).join("\n") + "</tr>"
   html_out.puts line_unicode
   html_out.puts line_letter
 end
+
+# Math
+html_out.puts "<tr><td></td></tr>"
+start_row = 0x2200
+(0..8).each do |row_num| #This is a bit much but let's see later
+  row = start_row + 16* row_num
+  line_unicode = "<tr class=\"unicode math\" id=\"row#{row_num}-unicode\">" + ((0..15).map {|i| "<td id=\"x#{row_num}y#{i}\"> %04x </td>" % (i + row)}).join("\n") + "</tr>"
+  line_letter = "<tr class=\"letter math\" id=\"row#{row_num}-letter\">" + ((0..15).map {|i| "<td id=\"x#{row_num}y#{i}\"> %c </td>" % (i + row)}).join("\n") + "</tr>"
+  html_out.puts line_unicode
+  html_out.puts line_letter
+end
+
 
 some_others = [0x00b0, 0x2026, 0xd8]
 html_out.puts "<tr><td></td></tr>"

@@ -1,13 +1,23 @@
 [{
-    "id" : 1,
+    "id" : 0,
     "Purpose" : "Get type of object",
     "lang": "ruby",
     "code": ["object.class", "object.is_a?"]
 },
 
 {
-    "id" : 1,
+    "id" : 0,
     "Purpose" : "Get type of object",
     "lang": "python",
     "code": ["type(object)"]
-}]
+},
+
+{
+    "id": 1,
+    "Purpose" : "起手式",
+    "lang": "php",
+    "code": ["<?php ?>"]
+}
+
+
+]

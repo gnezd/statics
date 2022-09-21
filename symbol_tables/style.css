@@ -23,7 +23,7 @@ tr.letter > td {
     border-right: 1px solid;
 }
 
-#x0y0, #x1y10, #x1y11, #x1y12, #x1y13, #x1y14, #x1y15, #x2y0, #x3y10, #x3y11, #x3y12, #x3y13, #x3y14, #x3y15 {
+.greek > :is(#x0y0, #x1y10, #x1y11, #x1y12, #x1y13, #x1y14, #x1y15, #x2y0, #x3y10, #x3y11, #x3y12, #x3y13, #x3y14, #x3y15) {
 /* Strike out less common letters*/
     color: white;
     border-color: black;
