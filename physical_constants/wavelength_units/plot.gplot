@@ -1,0 +1,26 @@
+set terminal svg mouse enhanced standalone
+set output 'out.svg'
+
+$nm << EONM
+# We use eV as the default unit
+# nm
+1239.87 1
+826.6   1.5
+619.9   2
+495.95  2.5
+413.29  3
+354.24  3.5
+309.97  4
+EONM
+
+unset key
+
+set xrange [1:10]
+set xlabel 'eV'
+set ylabel 'nm'
+set x2range [8065.3:80653]
+set xtics nomirror
+set x2tics
+set x2label 'cm^{-1}'
+
+plot $nm u ($2):($1) w points lt 7 lc "red", 2.998E8/(x/(6.241509E18)/6.62607015E-34)/1E-9 lc "black"
