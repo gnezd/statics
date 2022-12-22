@@ -1,4 +1,4 @@
-set terminal svg mouse enhanced standalone
+set terminal svg size 1000,800 mouse enhanced standalone
 set output 'out.svg'
 
 $nm << EONM
@@ -13,14 +13,20 @@ $nm << EONM
 309.97  4
 EONM
 
-unset key
+set key outside below
 
 set xrange [1:10]
 set xlabel 'eV'
 set ylabel 'nm'
 set x2range [8065.3:80653]
 set xtics nomirror
+set mxtics
 set x2tics
+set mx2tics 10
 set x2label 'cm^{-1}'
+set ytics
+set mytics 4
+set grid xtics ytics mxtics mytics ls 1 lc '#999999', ls 1 lc '#EEEEEE'
 
-plot $nm u ($2):($1) w points lt 7 lc "red", 2.998E8/(x/(6.241509E18)/6.62607015E-34)/1E-9 lc "black"
+
+plot $nm u ($2):($1) w points lt 7 lc "red" t 'half evs', 2.998E8/(x/(6.241509E18)/6.62607015E-34)/1E-9 lc "black"
