@@ -1,0 +1,10 @@
+# Repeat of 8
+set linetype 1 lc rgb "black" lw 2
+set linetype 2 lc rgb "dark-red" lw 2
+set linetype 3 lc rgb "olive" lw 2
+set linetype 4 lc rgb "navy" lw 2
+set linetype 5 lc rgb "red" lw 2
+set linetype 6 lc rgb "dark-turquoise" lw 2
+set linetype 7 lc rgb "dark-blue" lw 2
+set linetype 8 lc rgb "dark-violet" lw 2
+set linetype cycle 8
