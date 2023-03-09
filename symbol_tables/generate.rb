@@ -43,7 +43,7 @@ start_row = 0x2200
 end
 
 
-some_others = [0x00b0, 0x2026, 0xd8]
+some_others = [0x00b0, 0x2026, 0xd8, 0xc5]
 html_out.puts "<tr><td></td></tr>"
 html_out.puts "<tr class=\"unicode\" id=\"row-1-unicode\">" + ((0..some_others.size-1).map {|i| "<td id=\"x-1y#{i}\"> %04x </td>" % (some_others[i])}).join("\n") + "</tr>"
 html_out.puts "<tr class=\"letter\" id=\"row-1-letter\">" + ((0..some_others.size-1).map {|i| "<td id=\"x-1y#{i}\"> %c </td>" % (some_others[i])}).join("\n") + "</tr>"
