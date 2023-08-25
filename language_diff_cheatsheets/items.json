@@ -1,23 +1,50 @@
 [{
     "id" : 0,
-    "Purpose" : "Get type of object",
+    "purpose" : "Get type of object",
     "lang": "ruby",
     "code": ["object.class", "object.is_a?"]
 },
 
 {
     "id" : 0,
-    "Purpose" : "Get type of object",
+    "purpose" : "Get type of object",
     "lang": "python",
     "code": ["type(object)"]
 },
 
 {
     "id": 1,
-    "Purpose" : "起手式",
+    "purpose" : "起手式",
     "lang": "php",
     "code": ["<?php ?>"]
+},
+
+
+{
+    "id": 2,
+    "purpose" : "String init",
+    "lang": "C",
+    "code": ["char str[] = \"str\";"]
+},
+
+{
+    "id": 3,
+    "purpose": "case statement",
+    "lang": "C",
+    "code": ["switch (statement) {\ncase x:\n//do sth\nbreak;\n}"]
+},
+
+{
+    "id": 4,
+    "purpose": "File IO",
+    "lang": "python",
+    "code": ["f = open(<path>, <mode>)", "f.read()", "f.write"]
+},
+
+{
+    "id": 5,
+    "purpose": "format string",
+    "lang": "python",
+    "code": ["f'string with {variables} and expressions: {num:10d}'", "'aaaa {0} {1}'.format(var0, var1)"]
 }
-
-
 ]
