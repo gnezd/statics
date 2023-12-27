@@ -1,0 +1,40 @@
+set terminal svg size 800,800 background "black"
+set output 'palettes.svg'
+set pm3d
+set view map
+set samples 500
+set border 0
+unset xtics; unset ytics; unset xlabel; unset ylabel; unset colorbox; unset key
+set title offset graph 0 textcolor "white"
+set multiplot layout 5,2
+set palette color; set title 'color'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette gray; set title 'gray'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette cubehelix; set title 'cubehelix'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette cubehelix start -1 cycles 0.9 saturation 1.5; set title 'cubehelix start -1 cycles 0.9 saturation 1.5'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette rgbformulae 3,11,6; set title 'rgbformulae 3,11,6'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette rgbformulae 34,35,36; set title 'rgbformulae 34,35,36'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette rgbformulae 23,28,3; set title 'rgbformulae 23,28,3'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette rgbformulae 21,22,23; set title 'rgbformulae 21,22,23'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette rgbformulae 30,31,32; set title 'rgbformulae 30,31,32'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+set palette rgbformulae 33,13,10; set title 'rgbformulae 33,13,10'
+set object 1 rect from graph -11,0.5 to graph 11,1.5 behind fillstyle fillcolor "white"
+splot x w pm3d
+unset multiplot

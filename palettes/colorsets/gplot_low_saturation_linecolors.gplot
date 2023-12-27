@@ -1,0 +1,10 @@
+# Repeat of 8
+set linetype 1 lc rgb "#cecece" lw 2
+set linetype 2 lc rgb "#ff9e89" lw 2
+set linetype 3 lc rgb "#d5b151" lw 2
+set linetype 4 lc rgb "#90bad5" lw 2
+set linetype 5 lc rgb "#ffb2b2" lw 2
+set linetype 6 lc rgb "#a7e8e8" lw 2
+set linetype 7 lc rgb "#e6b9d5" lw 2
+set linetype 8 lc rgb "#ddc1e9" lw 2
+set linetype cycle 8
