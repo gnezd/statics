@@ -53,6 +53,28 @@
     "purpose": "for loop",
     "lang": "gnuplot",
     "code": ["plot/splot/set/unset for [var in \"array of elements\" <expr>", " or for [var=<begin>:<end>]"]
+},
+
+{
+    "id": 7,
+    "purpose": "Interactive debug",
+    "lang": "python",
+    "code": ["import pdf\npdf.set_trace"]
+},
+
+{
+    "id": 7,
+    "purpose": "Interactive debug",
+    "lang": "Ruby",
+    "code": ["require 'pry'\nbinding.pry"]
+},
+
+{
+    "id": 8,
+    "purpose": "Time",
+    "lang": "Ruby",
+    "code": ["Time.now", "Time.strftime(fmt_str)"]
 }
+
 
 ]

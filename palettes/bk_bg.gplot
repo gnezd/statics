@@ -2,7 +2,7 @@ set terminal svg size 800,600 mouse enhanced standalone background "black"
 set title 'Title' tc 'white'
 set xlabel 'wavenumber' tc 'white'
 set ylabel 'intensity (cts)' tc 'white'
-set xtics textcolor 'white'
+set xtics textcolor 'white' offset
 set ytics textcolor 'white'
 set border lc 'white'
 set key tc 'white'
